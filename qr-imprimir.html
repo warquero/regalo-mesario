@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR — Tu regalo ❤️</title>
+<style>
+  @page { size: A4; margin: 18mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #fff8fc;
+    color: #9d174d;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .tarjeta {
+    background: linear-gradient(160deg, #fff8fc 0%, #fde7f2 50%, #fbd7e9 100%);
+    border: 3px solid #f9a8d4;
+    border-radius: 32px;
+    padding: 48px 40px;
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 45px -12px rgba(190, 24, 93, 0.25);
+  }
+  .corazones { font-size: 1.4rem; letter-spacing: 10px; margin-bottom: 18px; opacity: 0.75; }
+  h1 { font-size: 2rem; margin-bottom: 6px; }
+  .subtitulo { font-size: 1.1rem; font-style: italic; color: #be185d; margin-bottom: 26px; }
+  .marco {
+    background: #ffffff;
+    display: inline-block;
+    padding: 22px;
+    border-radius: 24px;
+    border: 2px dashed #f9a8d4;
+    margin-bottom: 22px;
+  }
+  .marco img { display: block; width: 320px; height: 320px; }
+  .instruccion { font-size: 1.05rem; margin-bottom: 8px; }
+  .url { font-family: 'Courier New', monospace; font-weight: bold; color: #1f2937; font-size: 1rem; margin-bottom: 26px; }
+  .dedicatoria { font-style: italic; font-size: 1.05rem; color: #6b7280; line-height: 1.6; }
+  .btn {
+    margin-top: 28px;
+    background: #be185d;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 36px;
+    font-size: 1.05rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .btn:hover { transform: scale(1.04); }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .tarjeta { box-shadow: none; margin: 0 auto; }
+    .btn { display: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="tarjeta">
+    <div class="corazones">❤ 🤍 ❤ 🤍 ❤</div>
+    <h1>Para ti, mi amor</h1>
+    <p class="subtitulo">Un pequeño código… un regalo enorme</p>
+
+    <div class="marco">
+      <img src="qr-regalo.png" alt="Código QR del regalo">
+    </div>
+
+    <p class="instruccion">Apunta la cámara de tu celular a este código</p>
+    <p class="url">fascinating-pie-6f63dd.netlify.app</p>
+
+    <p class="dedicatoria">
+      Donde dice “mesario”… ahí comienza nuestra historia.<br>
+      Con todo mi amor ❤️
+    </p>
+
+    <button class="btn" onclick="window.print()">🖨️ Imprimir</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Regalo Mesario",
+  "short_name": "Mesario",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdf2f8",
+  "theme_color": "#be185d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Mesario - Adriana de Matheus</title>
+  <link rel="manifest" href="manifest.json?v=2">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=19">
+</head>
+<body>
+  <div id="app">
+    <!-- Página 2: Contenido completo con scroll vertical -->
+    <section class="page page-2 active" id="page-2">
+      <div class="container">
+        <!-- Sección: Mensaje + Carrusel -->
+        <div class="section-block">
+          <h2 class="header-message">Hoy es nuestro mesario mi amor…</h2>
+          <div class="carousel">
+            <div class="carousel-track" id="carousel-track">
+              <img src="img/foto1.jpg" alt="Foto 1" class="carousel-slide active">
+              <img src="img/foto2.jpg" alt="Foto 2" class="carousel-slide">
+              <img src="img/foto3.jpg" alt="Foto 3" class="carousel-slide">
+              <img src="img/foto4.jpg" alt="Foto 4" class="carousel-slide">
+              <img src="img/foto5.jpg" alt="Foto 5" class="carousel-slide">
+              <img src="img/foto6.jpg" alt="Foto 6" class="carousel-slide">
+              <img src="img/foto7.jpg" alt="Foto 7" class="carousel-slide">
+            </div>
+            <div class="carousel-dots" id="carousel-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+              <span class="dot" data-index="6"></span>
+            </div>
+          </div>
+          <p class="carousel-hint">Desliza sobre la foto hacia la izquierda para ver más</p>
+        </div>
+
+        <!-- Sección: Sobre y carta -->
+        <div class="section-block">
+          <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope" id="envelope" aria-label="Abrir sobre">
+              <div class="env-inner"></div>
+              <div class="env-flap-top"></div>
+              <div class="env-flap-bottom"></div>
+              <div class="seal" id="seal"><span>Descúbrelo</span></div>
+            </div>
+            <div class="letter" id="letter">
+              <div class="letter-content">
+                <div class="letter-deco">❤️ 🥂 ❤️</div>
+                <p>Un 1 de noviembre que se llena de magia por partida doble</p>
+                <p>celebramos nuestro mes de novios y de casados.</p>
+                <p>Ya son 5 años de caminar juntos de la mano, y cada día a tu lado se siente como un sueño cumplido.</p>
+                <p>Cada mes de esta relación es un capítulo nuevo en nuestra gran historia de amor.</p>
+                <p class="letter-final">¡Feliz mesario, mi amor!</p>
+              </div>
+              <button id="btn-close-letter" class="btn-letter-close" aria-label="Cerrar carta">✕</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección: Brindis -->
+        <div class="section-block">
+          <div class="toast-section">
+            <div class="wine-glasses">
+              <div class="glass left">
+                <div class="bowl">
+                  <div class="cap"></div>
+                  <div class="beer"></div>
+                  <div class="foam"></div>
+                  <div class="label">
+                    <svg viewBox="0 0 100 52" aria-hidden="true">
+                      <path id="lbl-top-l" d="M 14,30 Q 50,8 86,30" fill="none"></path>
+                      <path id="lbl-bot-l" d="M 14,28 Q 50,52 86,28" fill="none"></path>
+                      <text class="arc-text"><textPath href="#lbl-top-l" startOffset="50%" text-anchor="middle">Polar</textPath></text>
+                      <text class="arc-text"><textPath href="#lbl-bot-l" startOffset="50%" text-anchor="middle">Pilsen</textPath></text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass right">
+                <div class="bowl">
+                  <div class="cap"></div>
+                  <div class="beer"></div>
+                  <div class="foam"></div>
+                  <div class="label">
+                    <svg viewBox="0 0 100 52" aria-hidden="true">
+                      <path id="lbl-top-r" d="M 14,30 Q 50,8 86,30" fill="none"></path>
+                      <path id="lbl-bot-r" d="M 14,28 Q 50,52 86,28" fill="none"></path>
+                      <text class="arc-text"><textPath href="#lbl-top-r" startOffset="50%" text-anchor="middle">Polar</textPath></text>
+                      <text class="arc-text"><textPath href="#lbl-bot-r" startOffset="50%" text-anchor="middle">Pilsen</textPath></text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="clink" id="clink-effect">
+                <span>✦</span>
+                <span>✦</span>
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+              </div>
+            </div>
+          </div>
+          <div class="rotating-message" id="rotating-message">Hecho con amor</div>
+        </div>
+
+        <!-- Sección: Cierre -->
+        <div class="section-block final-block">
+          <div class="final-photo">
+            <img src="img/momento-especial.jpg" alt="Momento especial">
+          </div>
+          <h3>Guarda este recuerdo</h3>
+          <p>Este momento queda contigo siempre.</p>
+        </div>
+
+        <div class="section-footer">
+          <button id="btn-save" class="btn btn-primary">Guardar este momento</button>
+        </div>
+        <div id="save-confirmation" class="hidden">¡Guardado en tu memoria! ❤️</div>
+      </div>
+    </section>
+  </div>
+  <script src="js/script2.js?v=6"></script>
+</body>
+</html>
