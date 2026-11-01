@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mesario-v28';
+const CACHE_NAME = 'mesario-v29';
 const ASSETS = [
   './',
   './index.html',
@@ -6,7 +6,7 @@ const ASSETS = [
   './css/style.css?v=20',
   './js/script.js?v=4',
   './js/script2.js?v=6',
-  './js/audio.js?v=2',
+  './js/audio.js?v=3',
   './manifest.json?v=2',
   './favicon.svg',
   './img/icon.svg',

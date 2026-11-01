@@ -11,6 +11,9 @@
   const KEY_POS = 'mesario-musica-pos';
   const KEY_MUTE = 'mesario-musica-mudo';
 
+  // Volumen inicial de la música (75%)
+  audio.volume = 0.75;
+
   // Silencio persistente entre páginas
   if (sessionStorage.getItem(KEY_MUTE) === '1') audio.muted = true;
 
